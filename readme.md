@@ -21,3 +21,6 @@ Functions are mapped 1-to-1 from C to JavaScript as best as possible.
 - [sys/basicusb.h](https://ce-programming.github.io/toolchain/headers/sys/basicusb.html)
 - From [sys/power.h](https://ce-programming.github.io/toolchain/headers/sys/power.html): `boot_TurnOff`, `boot_TurnOn`, `boot_GetBatteryStatus`
 - From [ti/screen.h](https://ce-programming.github.io/toolchain/headers/ti/screen.html): `os_ClrHome`
+
+## Known bugs
+- Strings being passed to foreign functions don't seem to work. Printing a string causes it to become negative infinity or `%.17g`
